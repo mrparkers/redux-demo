@@ -24,7 +24,11 @@ export default class SimpleReduxDemo extends React.Component {
     }
 
     componentDidMount() {
-        setInterval(this.updateTimer, 1000);
+        this.interval = setInterval(this.updateTimer, 1000);
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.interval);
     }
 
     updateTimer() {
