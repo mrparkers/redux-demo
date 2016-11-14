@@ -9,7 +9,7 @@ const Header = () => (
     <nav className="header ui fixed menu">
         <div className="ui container">
             <Link to="/" className="header item">Redux - Monday Night Meeting</Link>
-            <Link to="/" className="item">Simple Redux Demo</Link>
+            <Link to="/simple" className="item">Simple Redux Demo</Link>
             <Link to="/" className="item">Todo List (Stateful React Components)</Link>
             <Link to="/" className="item">Todo List (Redux)</Link>
         </div>
