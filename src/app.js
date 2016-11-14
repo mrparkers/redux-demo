@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router';
 
-import '../css/app.css';
+import '../sass/app.scss';
 
 const renderDisplayedComponent = children => React.Children.map(children, child => React.cloneElement(child));
 
