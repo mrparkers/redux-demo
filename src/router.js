@@ -5,6 +5,7 @@ import App from './app';
 import Home from './home';
 import SimpleReduxDemo from './simple-redux-demo';
 import TodoListStatefulReact from './todo-list-stateful-react';
+import TodoListRedux from './todo-list-redux';
 
 export default class extends React.Component {
     render() {
@@ -14,6 +15,7 @@ export default class extends React.Component {
                     <IndexRoute component={Home} />
                     <Route path="/simple" component={SimpleReduxDemo} />
                     <Route path="/todo-stateful" component={TodoListStatefulReact} />
+                    <Route path="/todo-redux" component={TodoListRedux} />
                 </Route>
             </Router>
         );
