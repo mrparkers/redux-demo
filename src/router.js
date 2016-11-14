@@ -2,7 +2,7 @@ import React from 'react';
 import {Router, Route, browserHistory, IndexRoute} from 'react-router';
 
 import App from './app';
-import Test from './test';
+import Home from './home';
 import SimpleReduxDemo from './simple-redux-demo';
 
 export default class extends React.Component {
@@ -10,7 +10,7 @@ export default class extends React.Component {
         return (
             <Router history={browserHistory}>
                 <Route path="/" component={App}>
-                    <IndexRoute component={Test} />
+                    <IndexRoute component={Home} />
                     <Route path="/simple" component={SimpleReduxDemo} />
                 </Route>
             </Router>
