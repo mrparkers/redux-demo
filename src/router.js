@@ -7,16 +7,20 @@ import SimpleReduxDemo from './simple-redux-demo';
 import TodoListStatefulReact from './todo-list-stateful-react';
 import TodoListRedux from './todo-list-redux';
 
+const routes = (
+    <Route path="/" component={App}>
+        <IndexRoute component={Home} />
+        <Route path="/simple" component={SimpleReduxDemo} />
+        <Route path="/todo-stateful" component={TodoListStatefulReact} />
+        <Route path="/todo-redux" component={TodoListRedux} />
+    </Route>
+);
+
 export default class extends React.Component {
     render() {
         return (
             <Router history={browserHistory}>
-                <Route path="/" component={App}>
-                    <IndexRoute component={Home} />
-                    <Route path="/simple" component={SimpleReduxDemo} />
-                    <Route path="/todo-stateful" component={TodoListStatefulReact} />
-                    <Route path="/todo-redux" component={TodoListRedux} />
-                </Route>
+                {routes}
             </Router>
         );
     }
