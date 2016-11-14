@@ -1,0 +1,7 @@
+--compilers js:babel-register
+--recursive
+--reporter progress
+--ui bdd
+--require ./test/jsdom.js
+--require ./test/plugins.js
+--require ./test/sass-compiler.js
