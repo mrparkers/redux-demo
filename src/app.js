@@ -1,6 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router';
 
+import '../css/app.css';
+
 const renderDisplayedComponent = children => React.Children.map(children, child => React.cloneElement(child));
 
 const Header = () => (
