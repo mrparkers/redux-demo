@@ -5,7 +5,7 @@ import App from './app';
 import Home from './home';
 import SimpleReduxDemo from './simple-redux-demo';
 import TodoListStatefulReact from './todo-list-stateful-react';
-import TodoListRedux from './todo-list-redux';
+import TodoListRedux from './todo-list-redux/store';
 
 const routes = (
     <Route path="/" component={App}>
